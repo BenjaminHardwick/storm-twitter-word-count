@@ -24,7 +24,7 @@ public class IgnoreWordsBolt extends BaseRichBolt {
 	private Set<String> IGNORE_LIST = new HashSet<String>(Arrays.asList(new String[] {
             "http", "https", "the", "you", "que", "and", "for", "that", "like", "have", "this", "just", "with", "all", "get", 
             "about", "can", "was", "not", "your", "but", "are", "one", "what", "out", "when", "get", "lol", "now", "para", "por",
-            "want", "will", "know", "good", "from", "las", "don", "people", "got", "why", "con", "time", "would",
+            "want", "will", "know", "good", "from", "las", "don", "people", "got", "why", "con", "time", "would","football", "rugby", "soccer",
     }));
     private OutputCollector collector;
 

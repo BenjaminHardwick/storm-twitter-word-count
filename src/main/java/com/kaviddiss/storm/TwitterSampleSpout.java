@@ -60,11 +60,18 @@ public class TwitterSampleSpout extends BaseRichSpout {
 			public void onException(Exception e) {
 			}
 		};
+		
+		String[] keywords = {"covid", "covid19", "coronavirus", "covid19vaccine", "covidvaccine"};
+		
+		FilterQuery query = new FilterQuery().track(keywords);
+		
+		
 
 		TwitterStreamFactory factory = new TwitterStreamFactory();
 		twitterStream = factory.getInstance();
 		twitterStream.addListener(listener);
 		twitterStream.sample();
+		twitterStream.filter(query);
 	}
 
 	@Override

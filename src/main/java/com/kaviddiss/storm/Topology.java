@@ -21,7 +21,12 @@ public class Topology {
 		b.setSpout("TwitterSampleSpout", new TwitterSampleSpout());
         b.setBolt("WordSplitterBolt", new WordSplitterBolt(5)).shuffleGrouping("TwitterSampleSpout");
         b.setBolt("IgnoreWordsBolt", new IgnoreWordsBolt()).shuffleGrouping("WordSplitterBolt");
-        b.setBolt("WordCounterBolt", new WordCounterBolt(10, 5 * 60, 50)).shuffleGrouping("IgnoreWordsBolt");
+        b.setBolt("PositiveWordsBolt", new PositiveWordsBolt()).shuffleGrouping("IgnoreWordsBolt");
+        b.setBolt("NegativeWordsBolt", new NegativeWordsBolt()).shuffleGrouping("PositiveWordsBolt");
+        b.setBolt("ScoreCounterBolt", new ScoreCounterBolt()).shuffleGrouping("NegativeWordsBolt");
+        
+        
+        //b.setBolt("WordCounterBolt", new WordCounterBolt(10, 5 * 60, 50)).shuffleGrouping("PositiveOrNegativeWordsBolt");
 
 		final LocalCluster cluster = new LocalCluster();
 		cluster.submitTopology(TOPOLOGY_NAME, config, b.createTopology());

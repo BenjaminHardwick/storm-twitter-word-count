@@ -1,5 +1,18 @@
+
+DONE
+=========================
+* Positive Tweets filters
+* Getting hashtags
+
+TODO
+=========================
+* Negative Tweets Filtering
+* Hashtag Filtering
+
+
 storm-twitter-word-count
 ========================
+
 
 Sample project based on https://github.com/abh1nav/dvto1 demonstrating real-time computation Storm framework (https://github.com/nathanmarz/storm).
 
