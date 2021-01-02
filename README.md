@@ -1,4 +1,11 @@
 
+Description:
+
+This is a twitter data analysis, using word count for the setup of the apache-storm topology, I have converted this to analyse the responses to the ongoing COVID-19 pandemic,
+this program will collect data on how people are feeling based on their tweets towards the vaccination and ongoing pandemic. This analyses and gives a score based on
+both positive and negative responses.
+
+
 DONE
 =========================
 * Positive Tweets filters
