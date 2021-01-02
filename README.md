@@ -3,12 +3,28 @@ DONE
 =========================
 * Positive Tweets filters
 * Getting hashtags
-
-TODO
-=========================
 * Negative Tweets Filtering
 * Hashtag Filtering
 
+TODO
+=========================
+* Score Generation 
+* Get final results after certain amount of time (i.e 10 minutes of analysis.)
+
+
+References
+========================
+* Providing of both negative and positive words.
+
+
+   * Minqing Hu and Bing Liu. "Mining and Summarizing Customer Reviews." 
+       Proceedings of the ACM SIGKDD International Conference on Knowledge 
+       Discovery and Data Mining (KDD-2004), Aug 22-25, 2004, Seattle, 
+       Washington, USA, 
+   * Bing Liu, Minqing Hu and Junsheng Cheng. "Opinion Observer: Analyzing 
+       and Comparing Opinions on the Web." Proceedings of the 14th 
+       International World Wide Web conference (WWW-2005), May 10-14, 
+       2005, Chiba, Japan.
 
 storm-twitter-word-count
 ========================
@@ -29,8 +45,3 @@ To get started:
 
 You'll need to have valid Twitter OAuth credentials to get the sample working.
 For the exact steps on how to do that, visit https://dev.twitter.com/discussions/631.
-
-## Donation
-If you found this code helpful, I'd be grateful for your donation.
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2FKB7L5SWX5BA)
