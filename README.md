@@ -13,12 +13,13 @@ DONE
 * Negative Tweets Filtering
 * Hashtag Filtering
 * Score Generation 
-
-TODO
-=========================
 * Finalize score generation, add negative/positive tweets to hashmap and find out if the entire tweet has a positive/negative demeanor.
 * Get final results after certain amount of time (i.e 10 minutes of analysis.)
 
+
+TODO
+=========================
+* Fix NLP version and update to own repo
 
 References
 ========================
